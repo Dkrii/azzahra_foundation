@@ -2,102 +2,92 @@
 <html lang="id">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Linktree TK Azzahra Islamic Foundation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <title>Azzahra Islamic Foundation</title>
 
-    <!-- Menggunakan Font Lucu (Fredoka) dari Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Nunito:wght@400;700&display=swap" rel="stylesheet" />
-
-    <!-- Tailwind CSS untuk styling cepat -->
     <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- FontAwesome untuk Icon -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="flex justify-center items-center px-4">
-    <!-- Dekorasi Background (Awan) -->
-    <img src="https://cdn-icons-png.flaticon.com/512/1163/1163624.png" class="cloud w-24 top-10 left-0" style="animation-duration: 25s" />
-    <img src="https://cdn-icons-png.flaticon.com/512/1163/1163624.png" class="cloud w-32 top-40 left-0" style="animation-duration: 35s; animation-delay: -10s" />
-    <img src="https://cdn-icons-png.flaticon.com/512/3222/3222800.png" class="absolute top-5 right-5 w-20 animate-spin-slow" style="animation: spin 20s linear infinite" />
 
-    <!-- Awan tambahan di bagian bawah (warna putih) -->
-    <!-- <img src="https://cdn-icons-png.flaticon.com/512/1163/1163624.png" class="cloud w-40 bottom-6 left-6" style="animation-duration: 40s; animation-delay: -5s" />
-    <img src="https://cdn-icons-png.flaticon.com/512/1163/1163624.png" class="cloud w-28 bottom-14 right-10" style="animation-duration: 50s; animation-delay: -18s" />
-    <img src="https://cdn-icons-png.flaticon.com/512/1163/1163624.png" class="cloud w-32 bottom-10 left-1/2 -translate-x-1/2" style="animation-duration: 45s; animation-delay: -28s" /> -->
+  <body class="flex justify-center items-center">
 
-    <!-- 
-    ========================================
-    BAGIAN HTML (STRUCTURE)
-    ======================================== 
-    -->
-    <main class="w-full max-w-md relative z-10">
-      <!-- Kartu Utama -->
-      <div class="glass-card rounded-3xl p-6 text-center relative overflow-hidden">
-        <!-- Gambar Header Sekolah (Background atas kartu) -->
-        <div class="absolute top-0 left-0 w-full h-44 bg-cover bg-center">
-          <img src="img/anak2.jpeg" alt="Header Sekolah" class="w-full h-full object-cover rounded-t-3xl" />
+    <!-- Floating Clouds -->
+    <img src="https://cdn-icons-png.flaticon.com/512/1163/1163624.png" class="cloud w-24 top-10 left-0" />
+    <img src="https://cdn-icons-png.flaticon.com/512/1163/1163624.png" class="cloud w-32 top-40 left-0" style="animation-delay:-10s" />
+    <img src="https://cdn-icons-png.flaticon.com/512/3222/3222800.png" class="absolute top-5 right-5 w-20" style="animation:spin 20s linear infinite" />
+
+    <main class="w-full max-w-md relative z-10 mt-10 mb-10">
+
+      <!-- Card -->
+      <div class="glass-card p-5 text-center relative overflow-hidden">
+
+        <!-- Header Image -->
+        <div class="absolute top-0 left-0 w-full h-36">
+          <img src="img/anak2.jpeg" class="w-full h-full object-cover rounded-t-3xl" />
         </div>
 
-        <!-- Logo Area -->
-        <div class="relative mt-16 mb-4 flex justify-center">
-          <div class="logo-container w-32 h-32 rounded-full border-4 border-white shadow-lg overflow-hidden bg-white flex items-center justify-center">
-            <img src="img/logo.jpeg" alt="Logo TK Azzahra" class="w-full h-full object-cover" id="mainLogo" />
+        <!-- Logo -->
+        <div class="relative mt-12 mb-3 flex justify-center">
+          <div class="logo-container w-28 h-28 rounded-full border-4 border-white shadow-lg overflow-hidden bg-white">
+            <img src="img/logo.jpeg" class="w-full h-full object-cover" />
           </div>
         </div>
 
-        <!-- Judul & Bio -->
-        <h1 class="text-3xl font-bold text-white mb-1 drop-shadow-sm">Azzahra Islamic Foundation</h1>
-        <p class="text-gray-100 text-sm mb-6 leading-relaxed font-nunito p-4 rounded-xl 200">“Bersama kami, mari membentuk generasi Rabbani berakhlakul karimah, yang unggul dalam prestasi, karakter, dan nilai Islam.”</p>
+        <!-- Title -->
+        <h1 class="text-2xl font-bold text-white drop-shadow-sm">Azzahra Islamic Foundation</h1>
+        <p class="text-white text-xs px-2 mt-1 mb-4">
+          "Bersama kami, mari membentuk generasi Rabbani berakhlakul karimah, unggul dalam prestasi & nilai Islami."
+        </p>
 
-        <!-- Daftar Link -->
-        <div class="space-y-4 flex flex-col gap-1">
-          <!-- 1. Formulir Pendaftaran -->
-          <a href="https://forms.gle/anwySyD1yEakSduY6" target="_blank" class="link-btn btn-pink w-full py-4 rounded-xl flex items-center px-4 group">
-            <span class="text-2xl w-10 text-center"><i class="fa-solid fa-file-pen group-hover:rotate-12 transition-transform"></i></span>
+        <!-- Buttons -->
+        <div class="flex flex-col gap-3">
+
+          <a href="https://forms.gle/anwySyD1yEakSduY6" target="_blank"
+            class="link-btn btn-pink w-full py-3 rounded-xl flex items-center px-3 group">
+            <span class="text-2xl w-10 text-center"><i class="fa-solid fa-file-pen"></i></span>
             <span class="font-semibold flex-1 text-center pr-10">Formulir Pendaftaran</span>
           </a>
 
-          <!-- 2. WhatsApp -->
-          <a href="http://wa.me/+6285720924343" target="_blank" class="link-btn btn-green w-full py-4 rounded-xl flex items-center px-4 group">
-            <span class="text-2xl w-10 text-center"><i class="fa-brands fa-whatsapp group-hover:rotate-12 transition-transform"></i></span>
+          <a href="http://wa.me/+6285720924343" target="_blank"
+            class="link-btn btn-green w-full py-3 rounded-xl flex items-center px-3 group">
+            <span class="text-2xl w-10 text-center"><i class="fa-brands fa-whatsapp"></i></span>
             <span class="font-semibold flex-1 text-center pr-10">Hubungi WhatsApp Kami</span>
           </a>
 
-          <!-- 3. Tiktok -->
-          <a href="https://www.tiktok.com/@azzahrafoundation?_r=1&_t=ZS-91rGPHxljvd" target="_blank" class="link-btn btn-purple w-full py-4 rounded-xl flex items-center px-4 group">
-            <span class="text-2xl w-10 text-center"><i class="fa-brands fa-tiktok group-hover:rotate-12 transition-transform"></i></span>
+          <a href="https://www.tiktok.com/@azzahrafoundation" target="_blank"
+            class="link-btn btn-purple w-full py-3 rounded-xl flex items-center px-3">
+            <span class="text-2xl w-10 text-center"><i class="fa-brands fa-tiktok"></i></span>
             <span class="font-semibold flex-1 text-center pr-10">TikTok Azzahra</span>
           </a>
 
-          <!-- 4. Instagram -->
-          <a href="https://www.instagram.com/azzahraislamicfoundation?igsh=MWk4MHg5aTB4Mnlm" target="_blank" class="link-btn btn-orange w-full py-4 rounded-xl flex items-center px-4 group">
-            <span class="text-2xl w-10 text-center"><i class="fa-brands fa-instagram group-hover:rotate-12 transition-transform"></i></span>
+          <a href="https://www.instagram.com/azzahraislamicfoundation"
+            class="link-btn btn-orange w-full py-3 rounded-xl flex items-center px-3">
+            <span class="text-2xl w-10 text-center"><i class="fa-brands fa-instagram"></i></span>
             <span class="font-semibold flex-1 text-center pr-10">Instagram Sekolah</span>
           </a>
 
-          <!-- 5. Lokasi -->
-          <a href="https://maps.app.goo.gl/787YmnwWcm8w2d8M6?g_st=aw" target="_blank" class="link-btn btn-blue w-full py-4 rounded-xl flex items-center px-4 group">
-            <span class="text-2xl w-10 text-center"><i class="fa-solid fa-map-location-dot group-hover:rotate-12 transition-transform"></i></span>
+          <a href="https://maps.app.goo.gl/787YmnwWcm8w2d8M6" target="_blank"
+            class="link-btn btn-blue w-full py-3 rounded-xl flex items-center px-3">
+            <span class="text-2xl w-10 text-center"><i class="fa-solid fa-map-location-dot"></i></span>
             <span class="font-semibold flex-1 text-center pr-10">Lokasi Sekolah</span>
           </a>
         </div>
 
-        <!-- Footer -->
-        <div class="mt-8 text-xs text-white font-nunito">
+        <div class="mt-5 text-xs text-white">
           <p>&copy; 2025 Azzahra Islamic Foundation</p>
           <p>Membentuk Generasi Rabbani</p>
         </div>
       </div>
     </main>
 
-    <!-- Animasi burung terbang di bawah -->
-    <div class="birds-container" aria-hidden="true">
+    <!-- Birds -->
+    <div class="birds-container">
       <div class="bird big"></div>
       <div class="bird"></div>
       <div class="bird small"></div>
     </div>
 
-    <script src="script.js"></script>
   </body>
 </html>
